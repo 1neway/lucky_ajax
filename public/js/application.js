@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+    // alert('click!');
+
+    var url = $(this).attr('action');
+    //console.log(url);
+    //var value = { value: 4 }
+    
+    $.post(url, function(response) {
+    //console.log(response);
+    $('#die').html(response);
+  });
+
+  
+
+  
+
+  })
 
   // PSEUDO-CODE:
   //   1- intercept the form submission event using jQuery
