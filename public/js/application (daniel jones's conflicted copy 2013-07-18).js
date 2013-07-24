@@ -20,16 +20,16 @@ $(document).ready(function () {
   //   4- use jQuery to submit an AJAX post to the form's action
   //   5- when the AJAX post is done, replace the contents of the "#die" DIV in the DOM using jQuery
 
-  // $('form').on('submit', function(event) {
-  //   event.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
 
-  //   // create a random num called random_num
+    // create a random num called random_num
 
     
 
-  //   $('#die').html('<img src="/' + random_num + '.png" title="<%= @roll.value %>" alt="the roll">');
+    $('#die').html('<img src="/' + random_num + '.png" title="<%= @roll.value %>" alt="the roll">');
 
-  // });
+  });
 
 
 });
